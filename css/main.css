@@ -1,0 +1,16 @@
+h1 {
+  color: blue;
+}
+
+.content {
+  display: none;
+  background-color: white;
+}
+
+.initial-content {
+  display: block;
+}
+
+.container-fluid {
+  max-width: 1080px;
+}
