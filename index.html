@@ -34,38 +34,45 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-sm-3 bg-dark" id="sticky-sidebar">
-          <div class="nav flex-column flex-nowrap text-white p-2">
+        <!-- NAVBAR -->
+        <div class="col-12 col-sm-4 bg-dark" id="sticky-sidebar">
+          <div class="nav flex-column flex-nowrap text-white">
             <a onclick="selectContent('home')" class="btn btn-dark">home</a>
-            <a onclick="selectContent('javascript')" class="btn btn-dark"
-              >javascript</a
-            >
-            <a href="./" class="nav-link">Link</a>
-            <a href="./" class="nav-link">Link</a>
-            <a href="./" class="nav-link">Link</a>
+            <a onclick="selectContent('javascript')" class="btn btn-dark">javascript</a>
+
+            <!-- SUBMENU HOME -->
+            <ul class="list-unstyled components">
+              <li class="nav flex-column">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li><a onclick="selectContent('home')" class="w-100 btn btn-dark">JS2</a></li>
+                  <li><a onclick="selectContent('javascript')" class="w-100 btn btn-dark">JS1</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-12 col-sm-9 content-wrapper">
+        <!-- CONTENT DIV -->
+        <div class="col-12 col-sm-8 content-wrapper">
+          <!-- ------------ -->
+          <!-- HOME CONTENT -->
           <div class="content initial-content" id="home">
             <h1>Home</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus fugit minima repellat maxime sequi ratione animi
-              error dolores tempora fugiat nostrum temporibus, nulla dolorum
-              cupiditate adipisci laborum aut iste rerum nemo a sapiente!
-              Consequuntur, voluptates quos, corrupti optio aut iure natus saepe
-              illo asperiores facere quis. Delectus mollitia minus sed..
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit minima repellat maxime sequi ratione animi error dolores tempora fugiat nostrum
+              temporibus, nulla dolorum cupiditate adipisci laborum aut iste rerum nemo a sapiente! Consequuntur, voluptates quos, corrupti optio aut iure natus saepe illo
+              asperiores facere quis. Delectus mollitia minus sed..
             </p>
             <p>End of content...</p>
           </div>
 
+          <!-- JAVASCRIPT CONTENT -->
           <div class="content" id="javascript">
             <h1>JS</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laboriosam voluptas quas expedita repellendus necessitatibus
-              illum, distinctio quibusdam? Accusantium nisi blanditiis cumque.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam voluptas quas expedita repellendus necessitatibus illum, distinctio quibusdam? Accusantium
+              nisblanditiis cumque.
             </p>
           </div>
         </div>
