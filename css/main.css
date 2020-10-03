@@ -23,3 +23,20 @@ h1 {
 #sticky-sidebar {
   min-height: 100vh;
 }
+
+code {
+  display: block;
+  text-align: left;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  background-color: #eee;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #777777;
+}
+
+.components {
+  margin: 0px;
+}
