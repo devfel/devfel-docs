@@ -1,5 +1,5 @@
 h1 {
-  color: blue;
+  color: rgb(48, 45, 95);
 }
 
 .content {
@@ -30,13 +30,20 @@ code {
   position: relative;
   word-break: normal;
   word-wrap: normal;
-  background-color: #eee;
+  background-color: #bbbbbb !important;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
-  color: #777777;
+  color: #3a3a3a;
 }
 
 .components {
   margin: 0px;
+}
+
+.content-wrapper {
+  background-color: #eeeeee;
+}
+.content-wrapper * {
+  background-color: #eeeeee;
 }
