@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevFel's Simple Documentation</title>
 
-    <!-- Font Awesome JS -->
+    <!-- Font Awesome 5 -->
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -37,16 +37,39 @@
         <!-- NAVBAR -->
         <div class="col-12 col-sm-4 bg-dark" id="sticky-sidebar">
           <div class="nav flex-column flex-nowrap text-white">
-            <a onclick="selectContent('home')" class="btn btn-dark">home</a>
-            <a onclick="selectContent('javascript')" class="btn btn-dark">javascript</a>
+            <a onclick="selectContent('home')" class="btn btn-dark">Home</a>
+            <a onclick="selectContent('initial-config')" class="btn btn-dark">Initial Config</a>
 
-            <!-- SUBMENU HOME -->
+            <!-- SUBMENU HTML -->
             <ul class="list-unstyled components">
-              <li class="nav flex-column">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="btn btn-secondary dropdown-toggle">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                  <li><a onclick="selectContent('home')" class="w-100 btn btn-dark">JS2</a></li>
-                  <li><a onclick="selectContent('javascript')" class="w-100 btn btn-dark">JS1</a></li>
+              <li class="">
+                <a href="#htmlSubmenu" data-toggle="collapse" aria-expanded="false" class="w-100 btn btn-secondary dropdown-toggle">HTML</a>
+                <ul class="collapse list-unstyled" id="htmlSubmenu">
+                  <li><a onclick="selectContent('html-1')" class="w-100 btn btn-dark">HTML-1</a></li>
+                  <li><a onclick="selectContent('html-2')" class="w-100 btn btn-dark">HTML-2</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- SUBMENU CSS -->
+            <ul class="list-unstyled components">
+              <li class="">
+                <a href="#cssSubmenu" data-toggle="collapse" aria-expanded="false" class="w-100 btn btn-secondary dropdown-toggle">CSS</a>
+                <ul class="collapse list-unstyled" id="cssSubmenu">
+                  <li><a onclick="selectContent('css-1')" class="w-100 btn btn-dark">CSS-1</a></li>
+                  <li><a onclick="selectContent('css-2')" class="w-100 btn btn-dark">CSS-2</a></li>
+                  <li><a onclick="selectContent('css-3')" class="w-100 btn btn-dark">CSS-3</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- SUBMENU JS -->
+            <ul class="list-unstyled components">
+              <li class="">
+                <a href="#jsSubmenu" data-toggle="collapse" aria-expanded="false" class="w-100 btn btn-secondary dropdown-toggle">Javascript</a>
+                <ul class="collapse list-unstyled" id="jsSubmenu">
+                  <li><a onclick="selectContent('js-array')" class="w-100 btn btn-dark">Array</a></li>
+                  <li><a onclick="selectContent('js-string')" class="w-100 btn btn-dark">String</a></li>
                 </ul>
               </li>
             </ul>
@@ -58,22 +81,65 @@
           <!-- ------------ -->
           <!-- HOME CONTENT -->
           <div class="content initial-content" id="home">
-            <h1>Home</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit minima repellat maxime sequi ratione animi error dolores tempora fugiat nostrum
-              temporibus, nulla dolorum cupiditate adipisci laborum aut iste rerum nemo a sapiente! Consequuntur, voluptates quos, corrupti optio aut iure natus saepe illo
-              asperiores facere quis. Delectus mollitia minus sed..
-            </p>
-            <p>End of content...</p>
+            <h1>DevFel's Documentation & Quick Guide</h1>
+            <p>This page was created to be a quick guide for most of the usual commands and functions used by developers when dealing with several languages and frameworks.</p>
+          </div>
+
+          <!-- INITIAL CONFIG CONTENT -->
+          <div class="content" id="initial-config">
+            <h1>Initial Basic Configuration</h1>
+            <p>To load a CSS file, add the following to the header tag in you html</p>
+            <code>
+              &lt!-- Own CSS Style --> <br />
+              &ltlink rel="stylesheet" href="./css/main.css" />
+            </code>
+
+            <p>To load a Javascript file, add the following to the end of the body tag</p>
+            <code>
+              &lt!-- Own JS Script --> <br />
+              &ltscript src="./js/main.js">&lt/script>
+            </code>
+          </div>
+
+          <!-- HTML CONTENT -->
+          <!-- html-1 -->
+          <div class="content" id="html-1">
+            <h1>html-1</h1>
+            <p>Content for html-1.</p>
+          </div>
+          <!-- html-2 -->
+          <div class="content" id="html-2">
+            <h1>html-2</h1>
+            <p>Content for html-2.</p>
+          </div>
+
+          <!-- CSS CONTENT -->
+          <!-- css-1 -->
+          <div class="content" id="css-1">
+            <h1>css-1</h1>
+            <p>Content for css-1.</p>
+          </div>
+          <!-- css-2 -->
+          <div class="content" id="css-2">
+            <h1>css-2</h1>
+            <p>Content for css-2.</p>
+          </div>
+          <!-- css-3 -->
+          <div class="content" id="css-3">
+            <h1>css-3</h1>
+            <p>Content for css-3.</p>
           </div>
 
           <!-- JAVASCRIPT CONTENT -->
-          <div class="content" id="javascript">
-            <h1>JS</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam voluptas quas expedita repellendus necessitatibus illum, distinctio quibusdam? Accusantium
-              nisblanditiis cumque.
-            </p>
+          <!-- JS array -->
+          <div class="content" id="js-array">
+            <h1>Javascript Arrays</h1>
+            <p>Content for Array.</p>
+          </div>
+          <!-- JS string -->
+          <div class="content" id="js-string">
+            <h1>Javascript Strings</h1>
+            <p>Content for String.</p>
           </div>
         </div>
       </div>
