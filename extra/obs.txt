@@ -1,0 +1,21 @@
+
+
+Load Bootstrap 4
+Load Font Awesome
+
+
+
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+
+<div class="offset-3 content-wrapper">
+        <div class="col-9 content initial-content" id="home">
+          
+        </div>
+      </div>
+
+
+
+Replace the & character with &amp;
+Replace the < character with &lt;
+Replace the > character with &gt;
